@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.ContuctUs" BackgroundImageSource="BACK.jpg">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="https://yt3.ggpht.com/ytc/AKedOLTJfuPXLt-QhTDo-akDqJKnOKq0AGoVVp8EN-3s-w=s900-c-k-c0x00ffffff-no-rj" HeightRequest="100" Margin="10" HorizontalOptions="Center" VerticalOptions="Center"></Image>
+            <Label Text="SEND US MESSAGE" FontSize="Large" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+            <Editor  BackgroundColor="LightSkyBlue" AutoSize="TextChanges" Placeholder="editor" x:Name="messageeditor" HeightRequest="200" TextColor="Black" IsSpellCheckEnabled="True" MaxLength="200" 
+                     ></Editor>
+            <Button Text="SEND" HorizontalOptions="Center" BackgroundColor="LightBlue" x:Name="sendmessagebutton" TextColor="White" ></Button>
+            <ActivityIndicator x:Name="saveactivityindicator" Grid.Row="8" Grid.ColumnSpan="2" Color="LightSkyBlue" IsRunning="False"></ActivityIndicator>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

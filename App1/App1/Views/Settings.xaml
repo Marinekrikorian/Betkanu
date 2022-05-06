@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.Settings"         BackgroundImageSource="BACK.jpg"
+             Shell.TabBarIsVisible="True">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="70"></RowDefinition>
+                <RowDefinition Height="70"></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+
+            </Grid.ColumnDefinitions>
+            <Label Text="SETTINGS" Grid.Row="0" Grid.Column="0"  FontSize="Large" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Gray" FontAttributes="Bold"></Label>
+            <Picker x:Name="languagepicker" Grid.Row="1" Grid.Column="0" Title="SELECT YOUR LANGUAGE FOR THIS APP" FontAttributes="Italic">
+                <Picker.Items>
+
+                    <x:String>ENGLISH</x:String>
+                    <x:String>ARABIC</x:String>
+                    <x:String>FRENCH</x:String>
+                    <x:String>SYRIAC</x:String>
+                </Picker.Items>
+
+            </Picker>
+            <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="Center" Grid.Row="2" Grid.Column="0"  >
+                <Label Text="Change the font size" Grid.Row="2" Grid.Column="0" FontSize="Small" FontAttributes="Italic" ></Label>
+                <Stepper Minimum="0" Maximum="100" Value="2" Increment="1" x:Name="changefontbystepper" Grid.Column="0" Grid.Row="3"></Stepper>
+
+
+                <Label Text="{Binding Source={x:Reference changefontbystepper},Path=Value,StringFormat='{0}%'}" VerticalOptions="StartAndExpand" HorizontalOptions="Center"></Label>
+            </StackLayout>
+            <Button x:Name="savesettingsbutton" Text="SAVE SETTINGS" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="4"  BackgroundColor="LightBlue" TextColor="white"></Button>
+            <ActivityIndicator x:Name="savingactivityindicator" Grid.Row="5"  Color="LightCoral" IsRunning="False"></ActivityIndicator>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

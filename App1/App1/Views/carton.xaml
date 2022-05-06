@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.carton" 
+             xmlns:viewmodels="clr-namespace:App1.ViewModels"
+            BackgroundImageSource="BACK.jpg"
+             Shell.NavBarIsVisible="False"
+             Shell.TabBarIsVisible="False">
+
+    <ContentPage.BindingContext>
+        <viewmodels:CartonsEquipmentModelView></viewmodels:CartonsEquipmentModelView>
+    </ContentPage.BindingContext>
+  <!--  <Grid Margin="5" BackgroundColor="White" RowSpacing="2" >
+
+        
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="50"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <ListView x:Name="cartondetails" VerticalOptions="FillAndExpand" ItemTapped="cartondetails_ItemTapped" CachingStrategy="RecycleElement">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ImageCell Grid.Row="0"   ImageSource="{Binding imageurl}" Text="{Binding name}" TextColor="DarkBlue" ></ImageCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid> -->
+    <RefreshView x:Name="refreshing" Refreshing="refreshing_Refreshing">
+        
+        
+        <ListView 
+          
+        BackgroundColor="#DDECEE"
+              HasUnevenRows="True" 
+              ItemsSource="{Binding Song}" 
+            x:Name="cartondetails"
+              VerticalOptions="FillAndExpand" 
+       ItemTapped="cartondetails_ItemTapped"  
+              CachingStrategy="RecycleElement"
+                 IsPullToRefreshEnabled="True"
+              IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+              RefreshCommand="{Binding RefreshComand}"
+              RefreshControlColor="Blue"
+              
+             >
+        <ListView.ItemTemplate>
+
+            <DataTemplate>
+                <ViewCell>
+                    <ViewCell.ContextActions>
+                        <MenuItem  Text="Favorite" IsDestructive="True"></MenuItem>
+                        
+                    </ViewCell.ContextActions>
+                    <Grid Padding="10">
+                        <Frame CornerRadius="20" >
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="{Binding imageurl}" Aspect="AspectFill" WidthRequest="60"></Image>
+                                <StackLayout VerticalOptions="Center">
+                                    <Label Text="{Binding name}" VerticalOptions="Center" FontSize="17"></Label>
+                                </StackLayout>
+
+                            </StackLayout>
+                        </Frame>
+                    </Grid>
+
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+        <ListView.Header>
+            <StackLayout Orientation="Horizontal">
+                <Label               
+                    HorizontalOptions="Center"
+                 FontSize="Micro"
+                    Text="BETkANU SERIES">
+                </Label>
+            </StackLayout>
+        </ListView.Header>
+        <ListView.Footer>
+            <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+                <Label Text="FOOTER" TextDecorations="Underline"></Label>
+            </StackLayout>
+        </ListView.Footer>
+
+    </ListView>
+    </RefreshView>
+</ContentPage>

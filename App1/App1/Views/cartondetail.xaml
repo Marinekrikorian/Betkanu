@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.cartondetail">
+    <Grid Margin="7">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"></RowDefinition>
+            <RowDefinition Height="150"></RowDefinition>
+            <RowDefinition Height="150"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackLayout Spacing="50" Grid.Row="0" Grid.Column="0"  >
+            <Frame CornerRadius="10" HeightRequest="30" WidthRequest="50" HasShadow="True" BorderColor="#E9FBFB" BackgroundColor="#E9FBFB" >
+                <Label Text="{Binding name}" TextColor="DarkBlue"  VerticalOptions="Center" HorizontalOptions="Center"></Label>
+            </Frame>
+        </StackLayout>
+
+
+        <StackLayout  Grid.Row="1" Grid.Column="0" >
+
+            <Image Source="{Binding imageurl}" Aspect="AspectFill" Margin="20" Opacity="20"></Image>
+
+            <Label Text="{Binding description}" TextColor="DarkBlue" FontSize="Small" Margin="10" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+        </StackLayout>
+
+
+
+        <StackLayout Margin="40" Padding="20,10,0,0" Grid.Row="3" Grid.Column="0" Orientation="Horizontal">
+
+
+            <Button Text="Donate ❤"   BackgroundColor="#1C3889" WidthRequest="80" HeightRequest="75" CornerRadius="15" TextColor="#DAC110"  HorizontalOptions="CenterAndExpand"></Button>
+            <Button Text="Play  🎶" BackgroundColor="#DAC110" WidthRequest="80" HeightRequest="75" CornerRadius="15" TextColor="DarkBlue" HorizontalOptions="CenterAndExpand"></Button>
+            <Button Text="Play  🎶"  BackgroundColor="#1C3889" WidthRequest="80" HeightRequest="75" CornerRadius="15" TextColor="#DAC110"  HorizontalOptions="CenterAndExpand"></Button>
+        </StackLayout>
+
+    </Grid>
+</ContentPage>

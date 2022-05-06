@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.homepage">
+ <!-- <ContentPage.Content>
+        <StackLayout>
+            <CollectionView x:Name="my2" EmptyView="no items to desplay" >
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" VerticalItemSpacing="5" Span="1"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+           
+                            <StackLayout>
+                                <Image Source="{Binding image}" HeightRequest="100"></Image>
+                      
+                                <Label Text="{Binding Name}" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold" FontSize="20"></Label>
+                            
+                        </StackLayout>
+                     
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content> -->
+    <ScrollView >
+        <StackLayout>
+        <Image Source="betkanu_logo.png"   VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand"  Aspect="AspectFill"></Image>
+        <StackLayout Padding="50">
+            <StackLayout >
+
+                <Label Text="    BET KANU is a team of  creatives with a mission to build a foundation to advance the endangered dialects of the             Syriac language." FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Center"                        TextColor="DarkRed"></Label>
+            </StackLayout>
+            <Frame WidthRequest="200" HeightRequest="100" HasShadow="True" Padding="50,20">
+                <Image Source="images1.jpg"  VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200" HeightRequest="100" Aspect="AspectFill"></Image>
+            </Frame>
+
+
+                <Frame WidthRequest="200" HeightRequest="100"  HasShadow="True" Padding="50,20" >
+                    <Image Source="images.jpg"  VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200" HeightRequest="100"  Aspect="AspectFill"></Image>
+            </Frame>
+        </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage> 

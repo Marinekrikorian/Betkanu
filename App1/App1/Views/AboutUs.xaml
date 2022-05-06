@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.AboutUs" BackgroundImageSource="BACKGROUND.jpg">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="View Our Site" FontSize="Large" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+            <WebView Source="https://betkanu.com/" HeightRequest="500" WidthRequest="500" ></WebView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.software" Title="SOFTWARE" BackgroundColor="White" BackgroundImageSource="BACK.jpg">
+    <ScrollView >
+        <StackLayout Padding="10">
+            <StackLayout >
+
+                <Image Source="BETKANUReader_1920_700.jpg"   VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200" HeightRequest="100" Aspect="AspectFill"></Image>
+
+                <StackLayout>
+                    <Label Text="BET KANU READER" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Center"  TextColor="DarkRed"></Label>
+                    <Label Text="BET KANU presents BET KANU READER App, a great Syriac reading App for everyone."></Label>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout >
+
+                <Image Source="kanuguessapp_1920_700.jpg"  VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200" HeightRequest="100" Aspect="AspectFill"></Image>
+
+                <StackLayout>
+                    <Label Text="KANU GUESS" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Center" TextColor="DarkRed"></Label>
+                    <Label Text="Test your Syriac skills with this interactive game! Complete all the levels to unlock the last one. KANU GUESS is our first video game challenging you to learn new words. Available on Android and iOS. Look out for new levels and updates."></Label>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout>
+                <Image Source="radiokifo_1920_700.jpg"  VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200" HeightRequest="100" Aspect="AspectFill"></Image>
+                <StackLayout>
+                    <Label Text="RADIO KIFO" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Center"  TextColor="DarkRed"></Label>
+                    <Label Text="Radio Kifo is a new project by the Suryoyo Patriarchal Youth Department (SPYD) targetting Christian Youth in general and Suryoyo youth in particular."></Label>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage> 

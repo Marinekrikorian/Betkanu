@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.publishing" Title="PUBLISHING"  BackgroundColor="White" BackgroundImageSource="BACK.jpg">
+    <ContentPage.Content  >
+        <ScrollView>
+            <StackLayout Padding="10">
+                <StackLayout>
+                    <Image Source="kidsbanner700.jpg" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200" HeightRequest="100" Aspect="Fill"></Image>
+                    <Label Text="KIDS SONGS BOOK " FontSize="Subtitle" TextColor="DarkRed" FontAttributes="Bold" HorizontalOptions="Center"></Label>
+                    <Label Text="A children's book that contains many songs and stories in addition to poetry. The content is displayed via text and graphics that express the content. The book is in Syriac and Swedish. The texts were written and collected by Nursel Awrohum"></Label>
+
+                </StackLayout>
+
+
+                <StackLayout>
+                    <Image Source="coloringbanner700.jpg" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200" HeightRequest="100" Aspect="AspectFill"></Image>
+                    <Label Text="BET KANU COLORING BOOK" FontSize="Subtitle" TextColor="DarkRed" FontAttributes="Bold" HorizontalOptions="Center"></Label>
+                    <Label Text="The Nino and Mia Coloring Book is a must-have book for all children who are in love with the Nino and Mia cartoon series available on the BET KANU youtube channel. Children will go through all of the thirteen Surit episodes of season ane of the series by coloring their way to the end of the book while learning good habits and lessons with Nino and his fictional friend Mia."></Label>
+
+                </StackLayout>
+
+                <StackLayout>
+                    <Image Source="penandpaper700.jpg"  VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200" HeightRequest="100" Aspect="AspectFill"></Image>
+                    <Label Text="PEN, PAPER, and  APP" FontSize="Subtitle" TextColor="DarkRed" FontAttributes="Bold" HorizontalOptions="Center"></Label>
+                    <Label Text="This is the first full curriculum in Surayt, the Syriac Language of Tur-abdin. In this series, the child learns the letters and how to read and hear Syriac and speak on different topics. He or she also learns to read a sentence, a word, or a text, and the child builds a sentence and can read the word with the vowels."></Label>
+
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage> 

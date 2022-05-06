@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.song" 
+       xmlns:viewmodels="clr-namespace:App1.ViewModels"
+           
+             Padding="5"  BackgroundImageSource="BACK.jpg">
+    <ContentPage.BindingContext>
+        <viewmodels:SongEquipmentViewModel></viewmodels:SongEquipmentViewModel>
+    </ContentPage.BindingContext>
+
+    <!--  <Grid Margin="5" BackgroundColor="White" RowSpacing="3" >
+        <Grid.RowDefinitions >
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+          <CollectionView x:Name="songcollection">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <ImageCell Grid.Row="0" Text="{Binding name}" ImageSource="{Binding imageurl}"></ImageCell>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>-->
+    <RefreshView x:Name="refreshing" Refreshing="RefreshView_Refreshing"> <!--isinabled=false refresh just with internet-->
+        <ListView ItemSelected="songdetails_ItemSelected" BackgroundColor="#DDECEE"
+              HasUnevenRows="True" 
+              ItemsSource="{Binding Song}" 
+              x:Name="songdetails" 
+              VerticalOptions="FillAndExpand" 
+              ItemTapped="songdetails_ItemTapped"  
+              CachingStrategy="RecycleElement"
+              IsPullToRefreshEnabled="True"
+             >
+        
+            <ListView.ItemTemplate>
+               
+                <DataTemplate>
+                    <ViewCell>
+                    <ViewCell.ContextActions>
+                        <MenuItem Clicked="MenuItem_Clicked" Text="Favorite" IsDestructive="True"></MenuItem>
+
+                    </ViewCell.ContextActions>
+                    <Grid Padding="10">
+                        <Frame CornerRadius="20" >
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="{Binding imageurl}" Aspect="AspectFill" WidthRequest="60"></Image>
+                                <StackLayout VerticalOptions="Center">
+                                    <Label Text="{Binding name}" VerticalOptions="Center" FontSize="17"></Label>
+                                </StackLayout>
+
+                            </StackLayout>
+                        </Frame>
+                    </Grid>
+                        
+                </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        <ListView.Header>
+            <StackLayout Orientation="Horizontal">
+                <Label               
+                    HorizontalOptions="Center"
+                 FontSize="Micro"
+                    Text="BETkANU Songs">
+                </Label>
+            </StackLayout>
+        </ListView.Header>
+        <ListView.Footer>
+            <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+                <Label Text="FOOTER" TextDecorations="Underline"></Label>
+            </StackLayout>
+        </ListView.Footer>
+    
+    </ListView>
+    </RefreshView>
+</ContentPage> 
