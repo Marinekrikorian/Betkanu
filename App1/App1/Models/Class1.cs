@@ -13,6 +13,7 @@ namespace App1.Models
         public string name { get; set; }
         public string description { set; get; }
         public string imageurl { set; get; }
+        public string Details { set; get; }
 
     }
 
@@ -26,6 +27,7 @@ namespace App1.Models
         public string name { get; set; }
         public string description { set; get; }
         public string imageurl { set; get; }
+        public string Details { set; get; }
         public string url { set; get; }
 
     }

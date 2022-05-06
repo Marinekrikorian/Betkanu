@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.Page1" BackgroundImageSource="BACK.jpg">
+    <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <StackLayout>
+            <Grid VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image Source="antsong_1920_350.jpg" Aspect="AspectFit" WidthRequest="50" HeightRequest="150" VerticalOptions="StartAndExpand"/>
+                <Frame Grid.Row="1" HasShadow="True" CornerRadius="10" Margin="20,-50,20,0" Padding="18" HeightRequest="75" VerticalOptions="StartAndExpand">
+                    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Label Text="The sunset song" FontSize="20" FontAttributes="Bold"  TextColor="DarkBlue" HorizontalOptions="CenterAndExpand"/>
+                        <Grid Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <StackLayout Orientation="Vertical" Spacing="10" HorizontalOptions="Start">
+                                <Label Text="Traditional Song🎶" TextColor="#2C3E50" FontSize="12" HorizontalOptions="Start"/>
+                            </StackLayout>
+                            <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
+
+                                <Label Text="🗒Feb 11, 2022" TextColor="#2C3E50" FontSize="12" HorizontalOptions="Center"/>
+                            </StackLayout>
+                            <StackLayout Grid.Column="2" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
+
+                                <Label Text="Childrens Song " TextColor="#2C3E50" FontSize="12" HorizontalOptions="Center"/>
+                            </StackLayout>
+                        </Grid>
+                    </Grid>
+                </Frame>
+                <Frame Grid.Row="2" HasShadow="True" HeightRequest="150" WidthRequest="120" CornerRadius="10" Margin="20" Padding="18,0" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
+                    <Grid RowSpacing="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Row="1" Text="The Sunset song, Talyo E Shemsho, is an authentic song created in 1994 as part of the Nineveh  Children Songs Album #3. The album was entirely composed by the legendary musician Nouri Iskander. The song is a lullaby to put kids to sleep in such a beautiful setting describing the nature at night." FontSize="14" TextColor="DarkBlue"/>
+                    </Grid>
+                </Frame>
+            </Grid>
+            <StackLayout Margin="40" Padding="20,10,0,0" Grid.Row="3" Grid.Column="0" Orientation="Horizontal">
+                <Button Text="Donate"   BackgroundColor="#1C3889" WidthRequest="80" HeightRequest="75" CornerRadius="15" TextColor="#DAC110"  HorizontalOptions="CenterAndExpand"></Button>
+                <Button Text="Play  🎶" BackgroundColor="#DAC110" WidthRequest="80" HeightRequest="75" CornerRadius="15" TextColor="DarkBlue" HorizontalOptions="CenterAndExpand"></Button>
+                <Button Text="Download" CharacterSpacing="1" Padding="0" BackgroundColor="#1C3889" WidthRequest="90" HeightRequest="75" CornerRadius="15" TextColor="#DAC110"  HorizontalOptions="CenterAndExpand"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -24,3 +24,4 @@ C:\Users\GIGABYTE\Desktop\practis\App1\App1\App1\obj\Debug\netstandard2.0\App1.d
 C:\Users\GIGABYTE\Desktop\practis\App1\App1\App1\obj\Debug\netstandard2.0\refint\App1.dll
 C:\Users\GIGABYTE\Desktop\practis\App1\App1\App1\obj\Debug\netstandard2.0\App1.pdb
 C:\Users\GIGABYTE\Desktop\practis\App1\App1\App1\obj\Debug\netstandard2.0\ref\App1.dll
+C:\Users\GIGABYTE\Desktop\practis\App1\App1\App1\obj\Debug\netstandard2.0\Views\Page1.xaml.g.cs

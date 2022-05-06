@@ -31,14 +31,14 @@
 
                 <Label Text="    BET KANU is a team of  creatives with a mission to build a foundation to advance the endangered dialects of the             Syriac language." FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Center"                        TextColor="DarkRed"></Label>
             </StackLayout>
-            <Frame WidthRequest="200" HeightRequest="100" HasShadow="True" Padding="50,20">
+            <Frame  HasShadow="True" Padding="0">
                 <Image Source="images1.jpg"  VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200" HeightRequest="100" Aspect="AspectFill"></Image>
             </Frame>
 
 
-                <Frame WidthRequest="200" HeightRequest="100"  HasShadow="True" Padding="50,20" >
+                <Frame   HasShadow="True" CornerRadius="10" Padding="0" >
                     <Image Source="images.jpg"  VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200" HeightRequest="100"  Aspect="AspectFill"></Image>
-            </Frame>
+                </Frame>
         </StackLayout>
         </StackLayout>
     </ScrollView>

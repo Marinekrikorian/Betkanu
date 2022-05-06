@@ -649,3 +649,16 @@ C:\Users\GIGABYTE\Desktop\practis\App1\App1\App1.Android\obj\Debug\120\stamp\_Co
 C:\Users\GIGABYTE\Desktop\practis\App1\App1\App1.Android\obj\Debug\120\stamp\_GenerateJavaStubs.stamp
 C:\Users\GIGABYTE\Desktop\practis\App1\App1\App1.Android\obj\Debug\120\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\GIGABYTE\Desktop\practis\App1\App1\App1.Android\obj\Debug\120\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\GIGABYTE\Desktop\practis\App1\App1\App1.Android\obj\Debug\120\res\drawable\ninoandmia.jpg
+C:\Users\GIGABYTE\Desktop\practis\App1\App1\App1.Android\obj\Debug\120\res\drawable\download.jpg
+C:\Users\GIGABYTE\Desktop\practis\App1\App1\App1.Android\obj\Debug\120\res\drawable\back.jpg
+C:\Users\GIGABYTE\Desktop\practis\App1\App1\App1.Android\obj\Debug\120\res\drawable\grad.jpg
+C:\Users\GIGABYTE\Desktop\practis\App1\App1\App1.Android\obj\Debug\120\res\drawable\user.png
+C:\Users\GIGABYTE\Desktop\practis\App1\App1\App1.Android\obj\Debug\120\res\drawable\settings.png
+C:\Users\GIGABYTE\Desktop\practis\App1\App1\App1.Android\obj\Debug\120\res\drawable\publishing.png
+C:\Users\GIGABYTE\Desktop\practis\App1\App1\App1.Android\obj\Debug\120\res\drawable\software.png
+C:\Users\GIGABYTE\Desktop\practis\App1\App1\App1.Android\obj\Debug\120\res\drawable\home.png
+C:\Users\GIGABYTE\Desktop\practis\App1\App1\App1.Android\obj\Debug\120\res\drawable\line.png
+C:\Users\GIGABYTE\Desktop\practis\App1\App1\App1.Android\obj\Debug\120\res\drawable\audio.png
+C:\Users\GIGABYTE\Desktop\practis\App1\App1\App1.Android\obj\Debug\120\res\drawable\aboutus.png
+C:\Users\GIGABYTE\Desktop\practis\App1\App1\App1.Android\obj\Debug\120\res\drawable\cuntuctus.png

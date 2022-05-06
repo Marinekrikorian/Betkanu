@@ -10,6 +10,8 @@
        Shell.ForegroundColor="#0f538a"
        Shell.FlyoutBehavior="Flyout"
        Shell.UnselectedColor="LightYellow"
+ 
+     
      >
 
     <!--
@@ -88,46 +90,51 @@
 
     <Shell.FlyoutHeaderTemplate>
         <DataTemplate>
-            <Grid BackgroundColor="DarkGray" Padding="0">
-                <Frame Padding="10" Margin="10">
-                    <StackLayout Padding="10">
+            <Grid >
+                <Frame Padding="0" Margin="0">
+                    <StackLayout Padding="0">
                         <Label Text="Betkanu App" HorizontalOptions="Center" VerticalOptions="Center"></Label>
-                        <Image Source="kanuguessapp_1920_700.jpg" ></Image>
+                        <Image Source="kanuguessapp_1920_700.jpg" Aspect="AspectFill"></Image>
                     </StackLayout>
                 </Frame>
             </Grid>
         </DataTemplate>
     </Shell.FlyoutHeaderTemplate>
-    <FlyoutItem Title="back to homepage ->" Icon="icon_feed.png">
+
+
+
+
+
+    <FlyoutItem Title="back to homepage ->" Icon="home.png">
         <ShellContent Route="ItemsPage"  ContentTemplate="{DataTemplate local:homepage}" />
     </FlyoutItem>
 
-    <FlyoutItem Title="STUSIO" Icon="icon_about.png">
+    <FlyoutItem Title="STUDIO" Icon="audio.png">
 
         <Tab   Icon="icon_about.png">
             <ShellContent Title="songs" Route="songs" ContentTemplate="{DataTemplate local:song}" />
             <ShellContent Title="CARTON" Route="CARTON" ContentTemplate="{DataTemplate local:carton}" />
         </Tab>
     </FlyoutItem>
-    
-    
-    <FlyoutItem Title="publishing" Icon="icon_feed.png">
+
+
+    <FlyoutItem Title="publishing" Icon="publishing.png">
         <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate local:publishing}" />
     </FlyoutItem>
 
-    <FlyoutItem Title="software" Icon="icon_feed.png">
+    <FlyoutItem Title="software" Icon="software.png">
         <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate local:software}" />
     </FlyoutItem>
 
-  
-    <FlyoutItem Title="ContuctUs" Icon="icon_feed.png">
+
+    <FlyoutItem Title="ContuctUs" Icon="cuntuctus.png ">
         <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate local:ContuctUs}" />
     </FlyoutItem>
-    <FlyoutItem Title="AboutUs" Icon="icon_feed.png">
+    <FlyoutItem Title="AboutUs" Icon="aboutus.png">
         <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate local:AboutUs}" />
     </FlyoutItem>
 
-    <FlyoutItem Title="Settings" Icon="icon_feed.png">
+    <FlyoutItem Title="Settings" Icon="settings.png">
         <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate local:Settings}" />
     </FlyoutItem>
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->

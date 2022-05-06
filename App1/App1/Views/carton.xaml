@@ -4,8 +4,8 @@
              x:Class="App1.Views.carton" 
              xmlns:viewmodels="clr-namespace:App1.ViewModels"
             BackgroundImageSource="BACK.jpg"
-             Shell.NavBarIsVisible="False"
-             Shell.TabBarIsVisible="False">
+            
+        >
 
     <ContentPage.BindingContext>
         <viewmodels:CartonsEquipmentModelView></viewmodels:CartonsEquipmentModelView>
@@ -33,7 +33,7 @@
           
         BackgroundColor="#DDECEE"
               HasUnevenRows="True" 
-              ItemsSource="{Binding Song}" 
+              ItemsSource="{Binding Cartons}" 
             x:Name="cartondetails"
               VerticalOptions="FillAndExpand" 
        ItemTapped="cartondetails_ItemTapped"  
@@ -45,15 +45,16 @@
               
              >
         <ListView.ItemTemplate>
+               
 
-            <DataTemplate>
+                <DataTemplate>
                 <ViewCell>
                     <ViewCell.ContextActions>
                         <MenuItem  Text="Favorite" IsDestructive="True"></MenuItem>
                         
                     </ViewCell.ContextActions>
                     <Grid Padding="10">
-                        <Frame CornerRadius="20" >
+                        <Frame CornerRadius="10" >
                             <StackLayout Orientation="Horizontal">
                                 <Image Source="{Binding imageurl}" Aspect="AspectFill" WidthRequest="60"></Image>
                                 <StackLayout VerticalOptions="Center">
@@ -77,7 +78,7 @@
             </StackLayout>
         </ListView.Header>
         <ListView.Footer>
-            <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+            <StackLayout HorizontalOptions="Start" Orientation="Horizontal">
                 <Label Text="FOOTER" TextDecorations="Underline"></Label>
             </StackLayout>
         </ListView.Footer>

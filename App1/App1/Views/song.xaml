@@ -31,45 +31,43 @@
               CachingStrategy="RecycleElement"
               IsPullToRefreshEnabled="True"
              >
-        
+
             <ListView.ItemTemplate>
-               
                 <DataTemplate>
                     <ViewCell>
-                    <ViewCell.ContextActions>
-                        <MenuItem Clicked="MenuItem_Clicked" Text="Favorite" IsDestructive="True"></MenuItem>
+                        <ViewCell.ContextActions>
+                            <MenuItem  Text="Favorite" IsDestructive="True"></MenuItem>
 
-                    </ViewCell.ContextActions>
-                    <Grid Padding="10">
-                        <Frame CornerRadius="20" >
-                            <StackLayout Orientation="Horizontal">
-                                <Image Source="{Binding imageurl}" Aspect="AspectFill" WidthRequest="60"></Image>
-                                <StackLayout VerticalOptions="Center">
-                                    <Label Text="{Binding name}" VerticalOptions="Center" FontSize="17"></Label>
+                        </ViewCell.ContextActions>
+                        <Grid Padding="10">
+                            <Frame CornerRadius="10" >
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="{Binding imageurl}" Aspect="AspectFill" WidthRequest="60"></Image>
+                                    <StackLayout VerticalOptions="Center">
+                                        <Label Text="{Binding name}" VerticalOptions="Center" FontSize="17"></Label>
+                                    </StackLayout>
+
                                 </StackLayout>
+                            </Frame>
+                        </Grid>
 
-                            </StackLayout>
-                        </Frame>
-                    </Grid>
-                        
-                </ViewCell>
+                    </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
-        <ListView.Header>
+            <ListView.Header>
             <StackLayout Orientation="Horizontal">
-                <Label               
-                    HorizontalOptions="Center"
-                 FontSize="Micro"
+                    <Label
+                        HorizontalOptions="Center"
+                        FontSize="Micro"
                     Text="BETkANU Songs">
                 </Label>
             </StackLayout>
         </ListView.Header>
-        <ListView.Footer>
-            <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
-                <Label Text="FOOTER" TextDecorations="Underline"></Label>
-            </StackLayout>
-        </ListView.Footer>
-    
-    </ListView>
+            <ListView.Footer>
+                <StackLayout HorizontalOptions="Start" Orientation="Horizontal">
+                    <Label Text="FOOTER" TextDecorations="Underline"></Label>
+                </StackLayout>
+            </ListView.Footer>
+        </ListView>
     </RefreshView>
 </ContentPage> 

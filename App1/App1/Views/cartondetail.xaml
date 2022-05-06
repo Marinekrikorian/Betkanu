@@ -2,40 +2,55 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.Views.cartondetail">
-    <Grid Margin="7">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="75"></RowDefinition>
-            <RowDefinition Height="150"></RowDefinition>
-            <RowDefinition Height="150"></RowDefinition>
+    <ScrollView>
+        <StackLayout>
+            <Grid VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image Source="{Binding imageurl}" Aspect="AspectFill" WidthRequest="50" HeightRequest="150" VerticalOptions="StartAndExpand"></Image>
+                <Frame Grid.Row="1" HorizontalOptions="StartAndExpand" HasShadow="True" CornerRadius="10" Margin="20,-50,20,0" Padding="18" HeightRequest="75" VerticalOptions="StartAndExpand">
+                    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Label Text="{Binding name}" FontSize="20" FontAttributes="Bold"  TextColor="DarkBlue" HorizontalOptions="CenterAndExpand"></Label>
+                        <Grid Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <StackLayout  Spacing="10" >
+                                <Label Text="{Binding Details}" TextColor="#2C3E50" FontSize="12" />
+                            </StackLayout>
+                        </Grid>
+                    </Grid>
+                </Frame>
 
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
+                <Frame Grid.Row="2" HasShadow="True" HeightRequest="150" WidthRequest="120" CornerRadius="10" Margin="20" Padding="18,0" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
+                    <Grid RowSpacing="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Label Text="{Binding description}" TextColor="DarkBlue" FontSize="Small" Margin="10" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+                    </Grid>
+                </Frame>
+            </Grid>
+            <StackLayout Margin="40" Padding="20,10,0,0" Grid.Row="3" Grid.Column="0" Orientation="Horizontal">
 
-        <StackLayout Spacing="50" Grid.Row="0" Grid.Column="0"  >
-            <Frame CornerRadius="10" HeightRequest="30" WidthRequest="50" HasShadow="True" BorderColor="#E9FBFB" BackgroundColor="#E9FBFB" >
-                <Label Text="{Binding name}" TextColor="DarkBlue"  VerticalOptions="Center" HorizontalOptions="Center"></Label>
-            </Frame>
+
+                <Button Text="Share"   BackgroundColor="#1C3889" WidthRequest="80" HeightRequest="75" CornerRadius="15" TextColor="#DAC110"  HorizontalOptions="CenterAndExpand"></Button>
+                <Button Text="Play  🎶" BackgroundColor="#DAC110" WidthRequest="80" HeightRequest="75" CornerRadius="15" TextColor="DarkBlue" HorizontalOptions="CenterAndExpand"></Button>
+                <Button Text="Download"  BackgroundColor="#1C3889" WidthRequest="80" HeightRequest="75" CornerRadius="15" TextColor="#DAC110"  HorizontalOptions="CenterAndExpand"></Button>
+            </StackLayout>
+
+
         </StackLayout>
+    </ScrollView>
 
-
-        <StackLayout  Grid.Row="1" Grid.Column="0" >
-
-            <Image Source="{Binding imageurl}" Aspect="AspectFill" Margin="20" Opacity="20"></Image>
-
-            <Label Text="{Binding description}" TextColor="DarkBlue" FontSize="Small" Margin="10" VerticalOptions="Center" HorizontalOptions="Center"></Label>
-        </StackLayout>
-
-
-
-        <StackLayout Margin="40" Padding="20,10,0,0" Grid.Row="3" Grid.Column="0" Orientation="Horizontal">
-
-
-            <Button Text="Donate ❤"   BackgroundColor="#1C3889" WidthRequest="80" HeightRequest="75" CornerRadius="15" TextColor="#DAC110"  HorizontalOptions="CenterAndExpand"></Button>
-            <Button Text="Play  🎶" BackgroundColor="#DAC110" WidthRequest="80" HeightRequest="75" CornerRadius="15" TextColor="DarkBlue" HorizontalOptions="CenterAndExpand"></Button>
-            <Button Text="Play  🎶"  BackgroundColor="#1C3889" WidthRequest="80" HeightRequest="75" CornerRadius="15" TextColor="#DAC110"  HorizontalOptions="CenterAndExpand"></Button>
-        </StackLayout>
-
-    </Grid>
 </ContentPage>
